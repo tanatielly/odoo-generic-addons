@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="male" model="gender.gender">
+        <field name="name">Homem</field>
+    </record>
+
+    <record id="female" model="gender.gender">
+        <field name="name">Mulher</field>
+    </record>
+
+    <record id="trans_male" model="gender.gender">
+        <field name="name">Homem Trans</field>
+    </record>
+
+    <record id="trans_female" model="gender.gender">
+        <field name="name">Mulher Trans</field>
+    </record>
+
+    <record id="non_binary" model="gender.gender">
+        <field name="name">Não binário</field>
+        <field name="is_non_binary" eval="True"/>
+    </record>
+</odoo>

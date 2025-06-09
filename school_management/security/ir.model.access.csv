@@ -1,3 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_school_school,access.school.school,model_school_school,,1,1,1,1
 access_school_teacher,access.school.teacher,model_school_teacher,,1,1,1,1
+access_gender_gender,access.gender.gender,model_gender_gender,,1,1,1,1
+access_gender_pronoums,access.gender.pronoums,model_gender_pronoums,,1,1,1,1
+access_formation_formation,access.formation.formation,model_formation_formation,,1,1,1,1
+access_teachers_availability,access.teachers.availability,model_teachers_availability,,1,1,1,1
+access_school_student,access.school.student,model_school_student,,1,1,1,1

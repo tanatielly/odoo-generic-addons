@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_form_teachers_availability" model="ir.ui.view">
+        <field name="name">Availability Form</field>
+        <field name="model">teachers.availability</field>
+        <field name="arch" type="xml">
+            <form string="availabilities">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+</odoo>

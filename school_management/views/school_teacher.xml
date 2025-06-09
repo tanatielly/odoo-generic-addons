@@ -23,4 +23,41 @@
 
         </field>
     </record>
+
+    <record id="view_form_school_teacher" model="ir.ui.view">
+        <field name="name">School Teachers Form</field>
+        <field name="model">school.teacher</field>
+        <field name="arch" type="xml">
+            <form string="teachers">
+                <sheet>
+                    <h1>
+                        <group>
+                            <field name="name" placeholder="Digite o nome do professor"/>
+                        </group>
+                    </h1>
+                    <group>
+                        <field name="teacher_id"/>
+                        <field name="birth_date"/>
+                        <field name="cnpj_cpf"/>
+                        <field name="gender_ids" widget="many2many_tags"/>
+                    </group>
+                    <notebook>
+                        <page string="Formação">
+                            <field name="formation_ids"/>
+                        </page>
+                        <page string="Disponibilidade">
+                            <field name="availability_ids"/>
+                        </page>
+                    </notebook>
+                        
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+
+        </field>
+    </record>
 </odoo>
