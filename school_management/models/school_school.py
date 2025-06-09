@@ -6,4 +6,4 @@ from odoo import fields, models
 class SchoolSchool(models.Model):
     _name = "school.school"
 
-    name = fields.Char(string="Nome")
+    name = fields.Char(string="Nome", required=True)
