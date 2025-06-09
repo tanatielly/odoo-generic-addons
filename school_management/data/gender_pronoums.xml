@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="she_her" model="gender.pronoums">
+        <field name="name">Ela/Dela</field>
+    </record>
+
+    <record id="he_him" model="gender.pronoums">
+        <field name="name">Ele/Dele</field>
+    </record>
+
+    <record id="neutral" model="gender.pronoums">
+        <field name="name">Neutro</field>
+    </record>
+</odoo>

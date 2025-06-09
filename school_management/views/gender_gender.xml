@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_form_gender_gender" model="ir.ui.view">
+        <field name="name">Gender Form</field>
+        <field name="model">gender.gender</field>
+        <field name="arch" type="xml">
+            <form string="genders">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="is_non_binary" invisible="1"/>
+                        <field name="pronoums_ids" attrs="{'invisible': [('is_non_binary', '=', False)]}">
+                            <tree>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+</odoo>

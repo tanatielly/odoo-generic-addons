@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_school_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="school_student_root_menu" name="Students" parent="school_school_menu"
+        action="action_school_student" sequence="3" />
+
+        <record id="view_tree_school_student" model="ir.ui.view">
+        <field name="name">School Students</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <tree string="students">
+                <field name="name"/>
+                <field name="student_intern_register"/>
+                <field name="birth_date"/>
+                <field name="cnpj_cpf"/>
+                <field name="mother_id"/>
+                <field name="mother_contact_info"/>
+                <field name="father_id"/>
+                <field name="father_contact_info"/>
+
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="view_form_school_student" model="ir.ui.view">
+        <field name="name">School Students Form</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <form string="students">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="student_id"/>
+                        <field name="student_intern_register"/>
+                        <field name="birth_date"/>
+                        <field name="cnpj_cpf"/>
+                        <field name="gender_ids"/>
+                        <field name="mother_id"/>
+                        <field name="mother_contact_info"/>
+                        <field name="father_id"/>
+                        <field name="father_contact_info"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+
+        </field>
+    </record>
+</odoo>
