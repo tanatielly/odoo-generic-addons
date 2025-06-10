@@ -9,4 +9,4 @@ class GenderGender(models.Model):
     name = fields.Char(string="Nome", required=True)
     
     is_non_binary = fields.Boolean(string="Não binário?")
-    pronoums_ids = fields.One2many(comodel_name="gender.pronoums", inverse_name="gender_id", string="Pronomes")
+    pronouns_ids = fields.One2many(comodel_name="gender.pronouns", inverse_name="gender_id", string="Pronomes")

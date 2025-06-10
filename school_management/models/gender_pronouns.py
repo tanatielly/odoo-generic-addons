@@ -3,8 +3,8 @@
 
 from odoo import fields, models
 
-class GenderPronoums(models.Model):
-    _name = "gender.pronoums"
+class GenderPronouns(models.Model):
+    _name = "gender.pronouns"
 
     name = fields.Char(string="Nome", required=True)
     gender_id = fields.Many2one(comodel_name="gender.gender")

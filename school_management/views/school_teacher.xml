@@ -43,7 +43,7 @@
                     </group>
                     <notebook>
                         <page string="Formação">
-                            <field name="formation_ids"/>
+                            <field name="degree_ids"/>
                         </page>
                         <page string="Disponibilidade">
                             <field name="availability_ids"/>
