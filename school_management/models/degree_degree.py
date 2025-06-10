@@ -3,8 +3,8 @@
 
 from odoo import fields, models
 
-class FormationFormation(models.Model):
-    _name = "formation.formation"
+class DegreeDegree(models.Model):
+    _name = "degree.degree"
 
     name = fields.Char(string="Nome", required=True)
     teacher_id = fields.Many2one(comodel_name="school.teacher")

@@ -9,7 +9,7 @@
                     <group>
                         <field name="name"/>
                         <field name="is_non_binary" invisible="1"/>
-                        <field name="pronoums_ids" attrs="{'invisible': [('is_non_binary', '=', False)]}">
+                        <field name="pronouns_ids" attrs="{'invisible': [('is_non_binary', '=', False)]}">
                             <tree>
                                 <field name="name"/>
                             </tree>

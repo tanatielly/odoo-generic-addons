@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_tree_gender_pronouns" model="ir.ui.view">
+        <field name="name">Gender Pronouns</field>
+        <field name="model">gender.pronouns</field>
+        <field name="arch" type="xml">
+            <tree string="pronouns">
+                <field name="name"/>
+            </tree>
+
+        </field>
+    </record>
+</odoo>
